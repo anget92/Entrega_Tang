@@ -1,0 +1,19 @@
+{% extends 'appGym/padre.html' %}
+
+{% load static %}
+
+{% block cambio %}
+
+
+
+<h1>Resultado de la búsqueda de clases</h1>
+
+{% for clase in clases %}
+
+    <li> {{ clase.nombre }} - Intensidad: {{ clase.intensidad }}</li>
+
+{% endfor %}
+
+
+
+{% endblock %}

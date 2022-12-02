@@ -1,0 +1,19 @@
+{% extends 'appGym/padre.html' %}
+
+{% load static %}
+
+{% block cambio %}
+
+
+
+<h1>Resultado de la búsqueda de profesores</h1>
+
+{% for profe in profes %}
+
+    <li> {{ profe.nombre }} {{ profe.apellido }}</li>
+
+{% endfor %}
+
+
+
+{% endblock %}
